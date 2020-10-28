@@ -21,7 +21,7 @@ This endpoint allows you to get an authentication token by providing the user cr
 
 **URL** : `/auth/login/`
 
-**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=green"/>
+**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=blue"/>
 
 **Auth required** : No
 
@@ -111,7 +111,7 @@ This endpoint allows you to remove the active session on the server
 
 **URL** : `/auth/logout`
 
-**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=green"/>
+**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=blue"/>
 
 **Auth required** : Yes
 
@@ -145,7 +145,7 @@ This endpoint allows signed in users to set a new password.
 
 **URL** : `/auth/new-pass`
 
-**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=green"/>
+**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=blue"/>
 
 **Auth required** : Yes
 
@@ -211,7 +211,7 @@ This endpoint allows you to refresh the active session
 
 **URL** : `/auth/refresh-token`
 
-**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=green"/>
+**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=blue"/>
 
 **Auth required** : YES
 
@@ -278,7 +278,7 @@ This endpoint allows you to request the possibility to set a new password
 
 **URL** : `/auth/request-pass`
 
-**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=green"/>
+**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=blue"/>
 
 **Auth required** : No
 
@@ -322,7 +322,7 @@ This endpoint allows you to reset the password
 
 **URL** : `/auth/reset-pass`
 
-**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=green"/>
+**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=blue"/>
 
 **Auth required** : No
 

@@ -8,7 +8,7 @@ This endpoint returns all archive documents of the searched process from eNVenta
 
 **URL** : `/archive-documents`
 
-**Method** : <img src="https://img.shields.io/badge/GET%20-%23323330.svg?&style=flat&color=blue"/>
+**Method** : <img src="https://img.shields.io/badge/GET%20-%23323330.svg?&style=flat&color=green"/>
 
 **Auth required** : YES
 
@@ -58,7 +58,7 @@ This endpoint allows you to get a archive document from eNVenta
 
 **URL** : `/archive-documents`
 
-**Method** : <img src="https://img.shields.io/badge/GET%20-%23323330.svg?&style=flat&color=blue"/>
+**Method** : <img src="https://img.shields.io/badge/GET%20-%23323330.svg?&style=flat&color=green"/>
 
 **Auth required** : YES
 
@@ -124,7 +124,7 @@ This endpoint allows you to upload files to the eNVenta archive
 
 **URL** : `/archive-documents`
 
-**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=green"/>
+**Method** : <img src="https://img.shields.io/badge/POST%20-%23323330.svg?&style=flat&color=blue"/>
 
 **Auth required** : YES
 
