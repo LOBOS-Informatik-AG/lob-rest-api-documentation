@@ -6,3 +6,6 @@ All endpoints described in this documentation can be provided for the eNVenta-ER
 This API is used in production by the following LOBOS App's:
 * LOBOS Enterprise Shop
 * LOBOS Enterprise PWA-Scanner
+
+This site is also published as Github-Page:
+[Link to Web-Documentation](https://lobos-informatik-ag.github.io/lob-rest-api-documentation/)
