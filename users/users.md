@@ -124,18 +124,18 @@ This endpoint allows you to create a user
 
 ``` json
 {
-    "dtLastLogin": null,
-    "dtRegistration": 1581951949000,
-    "lngContactID": 103211,
+    "dtLastLogin": 1602846058000,
+    "dtRegistration": 1601465682000,
+    "lngContactID": null,
     "lngCustomerID": 10010,
-    "sEmail": "rbormolini@lobos.ch",
-    "sFirstName": "Reto",
+    "sEmail": "awidmer@lobos.ch",
+    "sFirstName": "Alexander",
     "sFormOfAdress": "Herr",
-    "sLastName": "Bormolini",
-    "sMobilePhone": "+41 79 253 46 18",
-    "sPhone": "+41 44 825 77 41",
-    "sUserName": "rbormolini@lobos.ch",
-    "shtLanguageID": 1
+    "sLastName": "Widmer",
+    "sMobilePhone": "",
+    "sPhone": "",
+    "sUserName": "awidmer@lobos.ch",
+    "shtLanguageID": 2
 }
 ```
 
@@ -148,7 +148,20 @@ This endpoint allows you to create a user
 **Content example**
 
 ```json
-// TODO
+{
+    "dtLastLogin": 1602853258000,
+    "dtRegistration": 1603987881000,
+    "lngContactID": 103212,
+    "lngCustomerID": 10010,
+    "sEmail": "awidmer@lobos.ch",
+    "sFirstName": "Alexander",
+    "sFormOfAdress": "Herr",
+    "sLastName": "Widmer",
+    "sMobilePhone": "",
+    "sPhone": "",
+    "sUserName": "awidmer@lobos.ch",
+    "shtLanguageID": 2
+}
 ```
 
 ### Error Response
@@ -181,18 +194,18 @@ This endpoint allows you to update a user
 
 ``` json
 {
-    "dtLastLogin":null,
-    "dtRegistration":1581948349000,
-    "lngContactID":308,
-    "lngCustomerID":200645,
-    "sEmail":"rvetterli@lobos.ch",
-    "sFirstName":"Remo",
-    "sFormOfAdress":"Herr",
-    "sLastName":"Vetterli",
-    "sMobilePhone":"",
-    "sPhone":"0448257777",
-    "sUserName":"rvetterli@lobos.ch",
-    "shtLanguageID":2
+    "dtLastLogin": 1602846058000,
+    "dtRegistration": 1601465682000,
+    "lngContactID": 95253,
+    "lngCustomerID": 10010,
+    "sEmail": "info@lobos.ch",
+    "sFirstName": "Remo",
+    "sFormOfAdress": "Herr",
+    "sLastName": "Vetterli",
+    "sMobilePhone": "",
+    "sPhone": "",
+    "sUserName": "info@lobos.ch",
+    "shtLanguageID": 2
 }
 ```
 
@@ -205,7 +218,20 @@ This endpoint allows you to update a user
 **Content example**
 
 ```json
-// TODO
+{
+    "dtLastLogin": 1602846058000,
+    "dtRegistration": 1601465682000,
+    "lngContactID": 95253,
+    "lngCustomerID": 10010,
+    "sEmail": "info@lobos.ch",
+    "sFirstName": "Remo",
+    "sFormOfAdress": "Herr",
+    "sLastName": "Vetterli",
+    "sMobilePhone": "",
+    "sPhone": "",
+    "sUserName": "info@lobos.ch",
+    "shtLanguageID": 2
+}
 ```
 
 ## Delete user

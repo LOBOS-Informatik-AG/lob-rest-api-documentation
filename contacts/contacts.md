@@ -14,8 +14,8 @@ This endpoint allows you to get all contacts with the attribute `ecomm = true`
 
 **Query parameters**
 
-```
-// TODO
+``` json
+None
 ```
 
 ### Success Response
@@ -27,7 +27,23 @@ This endpoint allows you to get all contacts with the attribute `ecomm = true`
 **Content example**
 
 ```json
-// TODO
+[
+    {
+        "dtAlterationDate": "1520416939000",
+        "dtEntryDate": "1511255659000",
+        "lngContactId": 101381,
+        "sDepartmentName": "2",
+        "sEmail": "awidmer@lobos.ch",
+        "sFirstName": "Alexander",
+        "sFormOfAdress": "Herr",
+        "sLastName": "Widmer",
+        "sMobilePhone": "",
+        "sPhone": "044 825 77 77",
+        "sPosition": "",
+        "shtInactive": null
+    },
+    ...
+]
 ```
 
 **or**

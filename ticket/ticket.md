@@ -12,18 +12,7 @@ This endpoint allows you to get the tickets by the specified filters
 
 **Permissions required** : No
 
-**Query parameters**
-
-- dtEntryDate[gte] / [lte] example: `/tickets?dtEntryDate[gte]=1596545331448&dtEntryDate[lte]=15996625521448`
-- dtAlterationDate[gte] / [lte]
-- lngCategory
-- lngContactID
-- lngPriority
-- lngStatus
-- sAlterationUser
-- sB22Description
-- sB22Responsible
-- sEntryUser
+**Query parameters** : Default filters
 
 ### Success Response
 
@@ -34,22 +23,28 @@ This endpoint allows you to get the tickets by the specified filters
 **Content example**
 
 ```json
-[
-    {
-        "dtAlterationDate": null,
-        "dtEntryDate": 1579701140000,
-        "lngCategory": null,
-        "lngContactID": 97382,
-        "lngPriority": 1,
-        "lngStatus": 1,
-        "lngTicketID": 2020012148,
-        "sAlterationUser": "",
-        "sB22Description": "",
-        "sB22Responsible": "",
-        "sEntryUser": "CFI"
-    },
-    ...
-]
+{
+    "perPage": 8,
+    "lastPage": "1",
+    "currentPage": "1",
+    "total": 1,
+    "data": [
+        {
+            "dtAlterationDate": 1602166517000,
+            "dtEntryDate": 1591380372000,
+            "lngCategory": 10,
+            "lngContactID": null,
+            "lngPriority": 3,
+            "lngStatus": 2,
+            "lngTicketID": 2020068631,
+            "sAlterationUser": "SYSADM",
+            "sB22Description": "Einstellungen Druckertreiber flüchtig",
+            "sB22Responsible": "MGR",
+            "sEntryUser": "MHA"
+        },
+        ...
+    ]
+}
 ```
 
 **or**
@@ -63,20 +58,6 @@ This endpoint allows you to get the tickets by the specified filters
     "text": "Kein(e) Ticket(s) gefunden."
 }
 ```
-
-### Error Responses
-
-**Condition** : if the username or password aren't valid.
-
-**Code** : `400 BAD REQUEST`
-
-**Content example**
-
-```json
-// TODO
-```
-
-
 
 ## Get ticket by id
 
@@ -99,7 +80,19 @@ This endpoint allows you to get a ticket by id
 **Content example**
 
 ```json
-// TODO
+{
+    "dtAlterationDate": 1602166517000,
+    "dtEntryDate": 1591380372000,
+    "lngCategory": 10,
+    "lngContactID": null,
+    "lngPriority": 3,
+    "lngStatus": 2,
+    "lngTicketID": 2020068631,
+    "sAlterationUser": "SYSADM",
+    "sB22Description": "Einstellungen Druckertreiber flüchtig",
+    "sB22Responsible": "MGR",
+    "sEntryUser": "MHA"
+}
 ```
 
 **or**
@@ -137,7 +130,7 @@ This endpoint allows you to create a ticket
     "lngPriority": 1,
     "lngStatus": 1,
     "sAlterationUser": null,
-    "sB22Description": "Test 2110",
+    "sB22Description": "Test API",
     "sB22Responsible": "",
     "sEntryUser": "SYSADM"
 }
@@ -152,7 +145,19 @@ This endpoint allows you to create a ticket
 **Content example**
 
 ```json
-// TODO
+{
+    "dtAlterationDate": null,
+    "dtEntryDate": 1596438000,
+    "lngCategory": null,
+    "lngContactID": null,
+    "lngPriority": 1,
+    "lngStatus": 1,
+    "lngTicketID": 2020119734,
+    "sAlterationUser": "",
+    "sB22Description": "Test API",
+    "sB22Responsible": "",
+    "sEntryUser": "SYSADM"
+}
 ```
 
 ## Update ticket
@@ -171,15 +176,15 @@ This endpoint allows you to update a ticket
 
 ``` json
 {
-    "dtAlterationDate": null,
-    "dtEntryDate": 1592845993,
-    "id": 2020090329,
+    "dtAlterationDate": 1604335734000,
+    "dtEntryDate": 1600038000,
     "lngCategory": null,
     "lngContactID": null,
     "lngPriority": 1,
     "lngStatus": 1,
+    "lngTicketID": 2020119734,
     "sAlterationUser": "SYSADM",
-    "sB22Description": "TEST 13:53",
+    "sB22Description": "Test API",
     "sB22Responsible": "",
     "sEntryUser": "SYSADM"
 }
@@ -194,7 +199,19 @@ This endpoint allows you to update a ticket
 **Content example**
 
 ```json
-// TODO
+{
+    "dtAlterationDate": 1604335734000,
+    "dtEntryDate": 1600038000,
+    "lngCategory": null,
+    "lngContactID": null,
+    "lngPriority": 1,
+    "lngStatus": 1,
+    "lngTicketID": 2020119734,
+    "sAlterationUser": "SYSADM",
+    "sB22Description": "Test API",
+    "sB22Responsible": "",
+    "sEntryUser": "SYSADM"
+}
 ```
 
 ## Get ticket-messages
@@ -218,7 +235,31 @@ This endpoint allows you to get all the messages of the specified ticket
 **Content example**
 
 ```json
-// TODO
+{
+    "perPage": 8,
+    "lastPage": "1",
+    "currentPage": "1",
+    "total": 8,
+    "data": [
+        {
+            "dtEntryDate": 1602176483000,
+            "id": "2116c63b-0977-11eb-91d9-00155d868c02",
+            "lngTicketId": 2020068631,
+            "sClerkID": "SYSADM",
+            "sText": "Hello Support",
+            "sTextType": "T"
+        },
+        {
+            "dtEntryDate": 1602176490000,
+            "id": "2116c63c-0977-11eb-91d9-00155d868c02",
+            "lngTicketId": 2020068631,
+            "sClerkID": "SYSADM",
+            "sText": "Hello Customer",
+            "sTextType": "A"
+        },
+        ...
+    ]
+}
 ```
 
 **or**
@@ -249,9 +290,9 @@ This endpoint allows you create a ticket-message
 
 ``` json
 {
-        "lngTicketId": 2020090329,
+        "lngTicketId": 2020068631,
         "sClerkID": "TF",
-        "sText": "Das ist eine Antwort via API.",
+        "sText": "Hi this is a question",
         "sTextType": "T"
 }
 ```
@@ -265,7 +306,14 @@ This endpoint allows you create a ticket-message
 **Content example**
 
 ```json
-// TODO
+{
+    "dtEntryDate": 1604335843000,
+    "id": "29c83d3d-1d23-11eb-91da-00155d868c02",
+    "lngTicketId": 2020068631,
+    "sClerkID": "TF",
+    "sText": "Hi this is a question",
+    "sTextType": "T"
+}
 ```
 
 ## Get ticket-categories

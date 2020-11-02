@@ -62,16 +62,6 @@ This endpoint allows you to get the downloads as a tree structure
 ]
 ```
 
-**or**
-
-**Condition** : if no structure is found.
-
-**Content example**
-
-```json
-// TODO
-```
-
 ## Get file
 
 This endpoint allows you to download a specific file

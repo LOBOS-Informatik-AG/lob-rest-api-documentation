@@ -1,5 +1,6 @@
 * [Home](/)
 * [Authentication](auth/authentication.md)
+* [Authorization](authorization/authorization.md)
 * [Archive Documents](archive/archive.md)
 * [Basics](basics/basics.md)
 * [Contacts](contacts/contacts.md)

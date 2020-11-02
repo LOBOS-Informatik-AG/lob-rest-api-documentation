@@ -145,7 +145,7 @@ The params have to be sent as form-data with the following params
 
 ### Success Response
 
-**Condition** : If the login was successfull.
+**Condition** : If the file was successfully uploaded.
 
 **Code** : `200 OK`
 

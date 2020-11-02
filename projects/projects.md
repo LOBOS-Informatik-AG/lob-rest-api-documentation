@@ -12,11 +12,7 @@ This endpoint allows you to get all the projects
 
 **Permissions required** : No
 
-**Query parameters**
-
-``` json
-// TODO
-```
+**Query parameters** : Default filters
 
 ### Success Response
 
@@ -27,7 +23,22 @@ This endpoint allows you to get all the projects
 **Content example**
 
 ```json
-// TODO
+[
+    {
+        "dtEntryDate": 1301484937000,
+        "lngCustomerID": 10010,
+        "lngProjectID": 10010,
+        "sCity": "",
+        "sCompany1": "",
+        "sCompany2": "",
+        "sCountry": "",
+        "sCountryCode": "",
+        "sProjectName": "LOBOS E-Commerce Shop",
+        "sStreet": "",
+        "sZipCode": "",
+        "shtStatus": 0
+    }
+]
 ```
 
 **or**

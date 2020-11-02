@@ -14,11 +14,7 @@ This endpoint allows you to get all the customers
 
 **Pagination** : Yes
 
-**Query parameters**
-
-``` json
-// TODO
-```
+**Query parameters** : Default filters
 
 ### Success Response
 
@@ -29,7 +25,57 @@ This endpoint allows you to get all the customers
 **Content example**
 
 ```json
-// TODO
+{
+    "perPage": 5,
+    "lastPage": "3",
+    "currentPage": "1",
+    "total": 15,
+    "data": [
+        {
+            "bNoShippingExpenses": false,
+            "bPrivateCustomer": false,
+            "decCreditLimit": null,
+            "lngAccountID": 10001,
+            "lngAssociationID": null,
+            "lngCentralPayerID": null,
+            "lngCustomerID": 10001,
+            "lngILN": null,
+            "lngRouteBaseID": null,
+            "lngSalesRepID": null,
+            "sCity": "Dübendorf",
+            "sCode1": "",
+            "sCode2": "",
+            "sCode3": "",
+            "sCompany1": "LOBOS Informatik AG",
+            "sCompany2": "",
+            "sCompanyID": "",
+            "sCountry": "Schweiz",
+            "sCountryCode": "CH",
+            "sCurrency": "CHF",
+            "sCustomerGroup": "3",
+            "sEMail": "info@lobos.ch",
+            "sExtSupplierID": "",
+            "sFax": "+41 44 825 77 77",
+            "sIndustrySector": "",
+            "sLanguageCode": "de",
+            "sMatchCode": "LOBOS",
+            "sOrderType": "",
+            "sPhone": "+41 44 825 77 77",
+            "sPostBox": "",
+            "sStreet": "Auenstrasse 4",
+            "sTaxNumber": "",
+            "sVATRegNo": "",
+            "sWebsite": "www.lobos.ch",
+            "sZipBox": "8600",
+            "sZipCode": "8600",
+            "shtDeliveryConditionID": null,
+            "shtPaymentConditionID": 1,
+            "shtPriceGroup": 2,
+            "shtShippingConditionID": null
+        },
+        ...
+    ]
+}
 ```
 
 **or**
@@ -65,7 +111,48 @@ This endpoint allows you to get a specific customer by id
 **Content example**
 
 ```json
-// TODO
+{
+    "bNoShippingExpenses": false,
+    "bPrivateCustomer": false,
+    "decCreditLimit": 1000.00,
+    "lngAccountID": 10896,
+    "lngAssociationID": null,
+    "lngCentralPayerID": null,
+    "lngCustomerID": 10896,
+    "lngILN": null,
+    "lngRouteBaseID": null,
+    "lngSalesRepID": 11,
+    "sCity": "Dübendorf",
+    "sCode1": "",
+    "sCode2": "",
+    "sCode3": "",
+    "sCompany1": "LOBOS Informatik AG",
+    "sCompany2": "",
+    "sCompanyID": "",
+    "sCountry": "Schweiz",
+    "sCountryCode": "CH",
+    "sCurrency": "CHF",
+    "sCustomerGroup": "1",
+    "sEMail": "",
+    "sExtSupplierID": "",
+    "sFax": "044 825 77 77",
+    "sIndustrySector": "",
+    "sLanguageCode": "de",
+    "sMatchCode": "LOBOS",
+    "sOrderType": "",
+    "sPhone": "+41 44 825 77 77",
+    "sPostBox": "",
+    "sStreet": "Auenstrasse 4",
+    "sTaxNumber": "",
+    "sVATRegNo": "",
+    "sWebsite": "www.lobos.ch",
+    "sZipBox": "8600",
+    "sZipCode": "8600",
+    "shtDeliveryConditionID": null,
+    "shtPaymentConditionID": 1,
+    "shtPriceGroup": 2,
+    "shtShippingConditionID": null
+}
 ```
 
 **or**

@@ -12,11 +12,7 @@ This endpoint allows you to get all countries with the attribute `ecomm = true`
 
 **Permissions required** : No
 
-**Query parameters**
-
-```
-// TODO
-```
+**Query parameters** : Default filters
 
 ### Success Response
 
@@ -27,7 +23,16 @@ This endpoint allows you to get all countries with the attribute `ecomm = true`
 **Content example**
 
 ```json
-// TODO
+[
+    {
+        "sCountryCode": "CH",
+        "sIsoCode": "CH",
+        "sName": "Schweiz",
+        "shtCountryID": 41,
+        "shtLanguageID": 1
+    },
+    ...
+]
 ```
 
 **or**

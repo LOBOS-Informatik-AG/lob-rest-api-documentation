@@ -2,7 +2,7 @@
 
 ## Get sales-documents
 
-This endpoint allows you to get all documents with the attribute `ecomm = true`
+This endpoint allows you to get all documents
 
 **URL** : `/sales-documents`
 
@@ -14,11 +14,7 @@ This endpoint allows you to get all documents with the attribute `ecomm = true`
 
 **Pagination** : Yes
 
-**Query parameters**
-
-``` json
-// TODO
-```
+**Query parameters** : Default filters
 
 ### Success Response
 
@@ -29,7 +25,78 @@ This endpoint allows you to get all documents with the attribute `ecomm = true`
 **Content example**
 
 ```json
-// TODO
+{
+    "perPage": 5,
+    "lastPage": "1",
+    "currentPage": "1",
+    "total": 1,
+    "data": [
+        {
+            "decDiscountAmount1": null,
+            "decDiscountAmount2": null,
+            "decDiscountAmount3": null,
+            "decDiscountPercent1": null,
+            "decDiscountPercent2": null,
+            "decDiscountPercent3": null,
+            "decPacking": 0.00,
+            "decPostage": 0.00,
+            "dtDeliveryDate": 1603324800000,
+            "dtEntryDate": 1603367079000,
+            "dtOrderDate": 1603367079000,
+            "dtPrintDate": 1603367167000,
+            "lngContactID": 101644,
+            "lngCustomerID": 10010,
+            "lngDocumentID": 2073574,
+            "lngOrderID": 2073574,
+            "lngProjectID": null,
+            "oDeliveryAddress": {
+                "sCity": "Dübendorf",
+                "sCompany1": "LOBOS Informatik AG",
+                "sCompany2": "",
+                "sContact": "",
+                "sCountry": "Schweiz",
+                "sCountryCode": "CH",
+                "sPostBox": "",
+                "sStreet": "Auenstrasse 4",
+                "sZipBox": "",
+                "sZipCode": "8600"
+            },
+            "oInvoiceAddress": {
+                "sCity": "Dübendorf",
+                "sCompany1": "LOBOS Informatik AG",
+                "sCompany2": "",
+                "sContact": "Herr Andrin Schaufelberger",
+                "sCountry": "Schweiz",
+                "sCountryCode": "CH",
+                "sPostBox": "",
+                "sStreet": "Auenstrasse 4",
+                "sZipBox": "",
+                "sZipCode": "8600"
+            },
+            "sClerkID": "SYSADM",
+            "sCurrencyCode": "",
+            "sDiscountText1": "",
+            "sDiscountText2": "",
+            "sDiscountText3": "",
+            "sDocumentType": "OC",
+            "sDocumentTypeName": "Auftragsbestätigung",
+            "sMemo": "",
+            "sOrderSource": "",
+            "sOrderText": "",
+            "sOrderType": "6",
+            "sPaymentID": "",
+            "sPaymentIDType": "",
+            "shtBlocked": 0,
+            "shtCompleteDelivery": null,
+            "shtDeliveryConditionID": null,
+            "shtPaymentConditionID": 1,
+            "shtShippingConditionID": null,
+            "shtValidityPeriod": null,
+            "shtValueCreditNote": null
+        },
+        ...
+    ]
+}
 ```
 
 **or**
@@ -63,7 +130,11 @@ This endpoint allows you to reprint the document
 **Query parameters**
 
 ``` json
-// TODO
+{
+    "sDocumentType": "O",
+    "lngDocumentID": 123456
+}
+
 ```
 
 ### Success Response
@@ -80,12 +151,12 @@ This endpoint allows you to reprint the document
 
 **or**
 
-**Condition** : no documents are found.
+**Condition** : if no documents are found.
 
 **Content example**
 
 ```json
 {
-    "text": "Keine Kontakte gefunden."
+    "text": "Kein Dokument gefunden."
 }
 ```

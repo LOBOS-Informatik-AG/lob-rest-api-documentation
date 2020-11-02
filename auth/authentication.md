@@ -341,9 +341,31 @@ The "sRegID" and "sNewPassword" field are required to successfully change the pa
 
 ### Success Response
 
-**Condition** : If the login was successfull.
+**Condition** : If the password reset was successfull.
 
 **Code** : `200 OK`
+
+**Content example**
+
+``` json
+{
+    "oUser": {
+        "dtLastLogin": 1602853258000,
+        "dtRegistration": 1603987881000,
+        "lngContactID": 103212,
+        "lngCustomerID": 10010,
+        "sEmail": "awidmer@lobos.ch",
+        "sFirstName": "Alexander",
+        "sFormOfAdress": "Herr",
+        "sLastName": "Widmer",
+        "sMobilePhone": "",
+        "sPhone": "",
+        "sUserName": "awidmer@lobos.ch",
+        "shtLanguageID": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImF3aWRtZXJAbG9ib3MuY2giLCJzU2Vzc2lvbklEIjoiNzk1N2ZiMDQ1MmNkNDUxNTljYmM2NGU1ODBlM2JmOTIiLCJuYmYiOjE2MDM5ODQzNjgsImV4cCI6MTYwMzk4NDk2OCwiaWF0IjoxNjAzOTg0MzY4fQ.herMsSuCsBOilgkCYLJW7zothJcs0zD4hF-stdIMBv0"
+}
+```
 
 ### Error Responses
 

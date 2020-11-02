@@ -12,11 +12,7 @@ This endpoint allows you to get all the favorites-list
 
 **Permissions required** : No
 
-**Query parameters**
-
-``` json
-// TODO
-```
+**Query parameters** : Default filters
 
 ### Success Response
 
@@ -27,7 +23,13 @@ This endpoint allows you to get all the favorites-list
 **Content example**
 
 ```json
-// TODO
+[
+    {
+        "gListID": "9c29a83f-6382-4264-a8b4-2515713cc7f9",
+        "sListname": "My favorites"
+    },
+    ...
+]
 ```
 
 **or**
@@ -54,33 +56,30 @@ This endpoint allows you to get a favorites-list by id
 
 **Permissions required** : No
 
-**Query parameters**
-
-``` json
-// TODO
-```
-
 ### Success Response
 
-**Condition** : If favorites are found.
+**Condition** : If the favorite-list is found.
 
 **Code** : `200 OK`
 
 **Content example**
 
 ```json
-// TODO
+{
+    "gListID": "9c29a83f-6382-4264-a8b4-2515713cc7f9",
+    "sListname": "Test"
+}
 ```
 
 **or**
 
-**Condition** : no favorites are found.
+**Condition** : if no favorite-list is found.
 
 **Content example**
 
 ```json
 {
-    "text": "Keine Favoritenliste gefunden."
+    "text": "Kein(e) Favorit(en) gefunden"
 }
 ```
 
@@ -101,8 +100,7 @@ This endpoint allows you to create a favorites-list
 
 ``` json
 {
-    "gListID": null,
-    "sListname": "Test 1453"
+    "sListname": "Test 1463"
 }
 ```
 
@@ -115,7 +113,10 @@ This endpoint allows you to create a favorites-list
 **Content example**
 
 ```json
-// TODO
+{
+    "gListID": "b31db048-7f79-4366-90c2-e9053aa6e376",
+    "sListname": "Test 1463"
+}
 ```
 
 ## Update favorite-list
@@ -134,8 +135,8 @@ This endpoint allows you to update a favorites-list
 
 ``` json
 {
-        "gListID": "086FEB83-A7C9-4171-B37C-73ED1E89DFFA",
-        "sListname": "changed name"
+    "gListID": "cb3aac5b-b139-4b64-9baf-dc717adbe0a0",
+    "sListname": "Test 37"
 }
 ```
 
@@ -148,7 +149,10 @@ This endpoint allows you to update a favorites-list
 **Content example**
 
 ```json
-// TODO
+{
+    "gListID": "cb3aac5b-b139-4b64-9baf-dc717adbe0a0",
+    "sListname": "Test 37"
+}
 ```
 
 ## Delete favorite-list
@@ -193,11 +197,7 @@ This endpoint allows you to get all the favorites-list
 
 **Permissions required** : No
 
-**Query parameters**
-
-``` json
-// TODO
-```
+**Query parameters** : Default filters
 
 ### Success Response
 
@@ -208,7 +208,33 @@ This endpoint allows you to get all the favorites-list
 **Content example**
 
 ```json
-// TODO
+[
+    {
+        "decQuantity": 66,
+        "gListID": "5b6d093d-cf88-4070-b089-bb23b5d5d714",
+        "oArticle": {
+            "decQuantityPackage": null,
+            "decSalesPrice1": 532.00,
+            "lngSalesPriceUnit": 1,
+            "sArticleCode1": "Quark",
+            "sArticleCode2": "Software",
+            "sArticleCode3": "Grafik - DTP",
+            "sArticleID": "7600165E",
+            "sEAN": "",
+            "sGTIN": {
+                "isNotNull": false,
+                "value": ""
+            },
+            "sName": "QuarkXPress Passport Mac UV",
+            "sQuantityUnitPackage": "",
+            "sQuantityUnitSales": "Stk",
+            "shtPlanningCode": 4,
+            "shtStatus": 2
+        },
+        "shtItemID": 1
+    },
+    ...
+]
 ```
 
 **or**
@@ -270,7 +296,30 @@ This endpoint allows you create a favorite
 **Content example**
 
 ```json
-// TODO
+{
+    "decQuantity": 66.234,
+    "gListID": "5b6d093d-cf88-4070-b089-bb23b5d5d714",
+    "oArticle": {
+        "decQuantityPackage": null,
+        "decSalesPrice1": 603.16,
+        "lngSalesPriceUnit": 1,
+        "sArticleCode1": "Sony",
+        "sArticleCode2": "Peripherie",
+        "sArticleCode3": "Monitore",
+        "sArticleID": "2000045H",
+        "sEAN": "",
+        "sGTIN": {
+            "isNotNull": false,
+            "value": ""
+        },
+        "sName": "Monitor 15 sony TFT HS53 Blue\"",
+        "sQuantityUnitPackage": "",
+        "sQuantityUnitSales": "Stk",
+        "shtPlanningCode": 4,
+        "shtStatus": 2
+    },
+    "shtItemID": 8
+}
 ```
 
 ## Update favorite-item
@@ -293,21 +342,24 @@ This endpoint allows you to update a favorite
     "gListID": "5b6d093d-cf88-4070-b089-bb23b5d5d714",
     "oArticle": {
         "decQuantityPackage": null,
-        "decSalesPrice1": null,
-        "lngSalesPriceUnit": null,
-        "sArticleCode1": null,
-        "sArticleCode2": null,
-        "sArticleCode3": null,
-        "sArticleID": "2000045H",
-        "sEAN": null,
-        "sGTIN": "",
-        "sName": null,
-        "sQuantityUnitPackage": null,
-        "sQuantityUnitSales": null,
-        "shtPlanningCode": null,
-        "shtStatus": null
+        "decSalesPrice1": 532.00,
+        "lngSalesPriceUnit": 1,
+        "sArticleCode1": "Quark",
+        "sArticleCode2": "Software",
+        "sArticleCode3": "Grafik - DTP",
+        "sArticleID": "7600165E",
+        "sEAN": "",
+        "sGTIN": {
+            "isNotNull": false,
+            "value": ""
+        },
+        "sName": "QuarkXPress Passport Mac UV",
+        "sQuantityUnitPackage": "",
+        "sQuantityUnitSales": "Stk",
+        "shtPlanningCode": 4,
+        "shtStatus": 2
     },
-    "shtItemID": 5
+    "shtItemID": 9
 }
 ```
 
@@ -320,7 +372,30 @@ This endpoint allows you to update a favorite
 **Content example**
 
 ```json
-// TODO
+{
+    "decQuantity": 66.234,
+    "gListID": "5b6d093d-cf88-4070-b089-bb23b5d5d714",
+    "oArticle": {
+        "decQuantityPackage": null,
+        "decSalesPrice1": 532.00,
+        "lngSalesPriceUnit": 1,
+        "sArticleCode1": "Quark",
+        "sArticleCode2": "Software",
+        "sArticleCode3": "Grafik - DTP",
+        "sArticleID": "7600165E",
+        "sEAN": "",
+        "sGTIN": {
+            "isNotNull": false,
+            "value": ""
+        },
+        "sName": "QuarkXPress Passport Mac UV",
+        "sQuantityUnitPackage": "",
+        "sQuantityUnitSales": "Stk",
+        "shtPlanningCode": 4,
+        "shtStatus": 2
+    },
+    "shtItemID": 9
+}
 ```
 
 ## Delete favorite-item

@@ -29,7 +29,31 @@ This endpoint allows you to get all the shipping-addresses
 **Content example**
 
 ```json
-// TODO
+{
+    "perPage": 5,
+    "lastPage": "1",
+    "currentPage": "1",
+    "total": 4,
+    "data": [
+        {
+            "lngAddressID": 13,
+            "lngContactID": null,
+            "lngCustomerID": 10896,
+            "lngRouteBaseID": null,
+            "sCity": "Zürich",
+            "sCompany1": "LOBOS Informatik AG",
+            "sCompany2": "",
+            "sContact": "",
+            "sCountry": "Schweiz",
+            "sCountryCode": "CH",
+            "sPostBox": "",
+            "sStreet": "Auenstrasse 4",
+            "sZipBox": "",
+            "sZipCode": "8600"
+        },
+        ...
+    ]
+}
 ```
 
 **or**
@@ -40,7 +64,7 @@ This endpoint allows you to get all the shipping-addresses
 
 ```json
 {
-    "text": "Keine Lieferadressen gefunden."
+    "text": "Versand-Adresse nicht gefunden"
 }
 ```
 
@@ -65,7 +89,22 @@ This endpoint allows you to get a shipping-address by id
 **Content example**
 
 ```json
-// TODO
+{
+    "lngAddressID": 13,
+    "lngContactID": null,
+    "lngCustomerID": 10896,
+    "lngRouteBaseID": null,
+    "sCity": "Zürich",
+    "sCompany1": "LOBOS Informatik AG",
+    "sCompany2": "",
+    "sContact": "",
+    "sCountry": "Schweiz",
+    "sCountryCode": "CH",
+    "sPostBox": "",
+    "sStreet": "Auenstrasse 4",
+    "sZipBox": "",
+    "sZipCode": "8600"
+},
 ```
 
 **or**
@@ -76,7 +115,7 @@ This endpoint allows you to get a shipping-address by id
 
 ```json
 {
-    "text": "Keine Lieferadresse gefunden."
+    "text": "Versand-Adresse nicht gefunden"
 }
 ```
 
@@ -123,7 +162,22 @@ This endpoint allows you to create a shipping-address
 **Content example**
 
 ```json
-// TODO
+{
+    "lngAddressID": 18,
+    "lngContactID": 100955,
+    "lngCustomerID": 11722,
+    "lngRouteBaseID": null,
+    "sCity": "Dübendorf",
+    "sCompany1": "LOBOS Informatik AG",
+    "sCompany2": "",
+    "sContact": "Alexander Widmer",
+    "sCountry": "Schweiz",
+    "sCountryCode": "CH",
+    "sPostBox": "",
+    "sStreet": "Auenstrasse 4",
+    "sZipBox": "",
+    "sZipCode": "8600"
+}
 ```
 
 ## Update shipping-address
@@ -142,18 +196,18 @@ This endpoint allows you to update a shipping-address
 
 ``` json
 {
-    "lngAddressID": 12,
+    "lngAddressID": 18,
     "lngContactID": 100955,
     "lngCustomerID": 11722,
     "lngRouteBaseID": null,
     "sCity": "Dübendorf",
     "sCompany1": "LOBOS Informatik AG",
     "sCompany2": "",
-    "sContact": "Alexander Widmer",
+    "sContact": "Andrea Erni",
     "sCountry": "Schweiz",
     "sCountryCode": "CH",
     "sPostBox": "",
-    "sStreet": "Auenstrasse 4",
+    "sStreet": "Auenstrasse 6",
     "sZipBox": "",
     "sZipCode": "8600"
 }
@@ -168,7 +222,22 @@ This endpoint allows you to update a shipping-address
 **Content example**
 
 ```json
-// TODO
+{
+    "lngAddressID": 18,
+    "lngContactID": 100955,
+    "lngCustomerID": 11722,
+    "lngRouteBaseID": null,
+    "sCity": "Dübendorf",
+    "sCompany1": "LOBOS Informatik AG",
+    "sCompany2": "",
+    "sContact": "Andrea Erni",
+    "sCountry": "Schweiz",
+    "sCountryCode": "CH",
+    "sPostBox": "",
+    "sStreet": "Auenstrasse 6",
+    "sZipBox": "",
+    "sZipCode": "8600"
+}
 ```
 
 ## Delete shipping-address
