@@ -5,6 +5,7 @@
 * [Basics](basics/basics.md)
 * [Bending](bending/bending.md)
 * [Carts](carts/carts.md)
+* [Configuration](configuration/configuration.md)
 * [Contacts](contacts/contacts.md)
 * [Countries](countries/countries.md)
 * [Customers](customers/customers.md)
