@@ -2,7 +2,7 @@
 
 ## Post configuration
 
-This endpoint allows you to create an initial configuration based on the *ConfigurationParam* object that ist passed in the body.
+This endpoint allows you to create an initial steel configuration based on the *ConfigurationParam* object that ist passed in the body.
 
 **URL** : `/configuration`
 
