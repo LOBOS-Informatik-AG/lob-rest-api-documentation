@@ -2,7 +2,7 @@
 
 ## Get buildingsites
 
-This endpoint allows you to get all contacts with the attribute `ecomm = true`
+This endpoint allows you to GET all contacts with the attribute `ecomm = true`
 
 **URL** : `/contacts`
 
