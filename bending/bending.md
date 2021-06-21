@@ -2,15 +2,17 @@
 
 ## Get buildingsites
 
-This endpoint allows you to GET all contacts with the attribute `ecomm = true`
+This endpoint allows you to GET all buildingsites who have set the attribute `Show in banding App`
 
-**URL** : `/contacts`
+**URL** : `/buildingsites`
 
 **Method** : <img src="https://img.shields.io/badge/GET%20-%23323330.svg?&style=flat&color=green"/>
 
-**Auth required** : YES
+**Auth required** : Yes
 
 **Permissions required** : No
+
+**Pagination** : Yes
 
 **Query parameters**
 
