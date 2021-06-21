@@ -3,6 +3,7 @@
 * [Authorization](authorization/authorization.md)
 * [Archive Documents](archive/archive.md)
 * [Basics](basics/basics.md)
+* [Bending](bending/bending.md)
 * [Carts](carts/carts.md)
 * [Contacts](contacts/contacts.md)
 * [Countries](countries/countries.md)
