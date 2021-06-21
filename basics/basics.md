@@ -2,7 +2,9 @@
 
 # App-Id
 
-// TODO
+The interface can be configured for different applications. For this purpose, the App-Id must be specified in the header (for all requests)
+
+- `webshopId` (appId)
 
 # Localization
 
@@ -10,7 +12,9 @@
 
 # Branches
 
-// TODO
+The interface can be configured for different branches. For this purpose, the "branchkey" must be specified in the header (for all requests)
+
+- `businessUnit` (branchkey)
 
 # Pagination
 
