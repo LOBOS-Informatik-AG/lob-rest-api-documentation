@@ -25,7 +25,26 @@ None
 **Content example**
 
 ```json
-// TODO
+[
+    {
+        "sIsoCode": "de",
+        "sLanguageName": "Deutsch",
+        "shtIsDefault": 1,
+        "shtLanguageID": 1
+    },
+    {
+        "sIsoCode": "fr",
+        "sLanguageName": "Französisch",
+        "shtIsDefault": 0,
+        "shtLanguageID": 3
+    },
+    {
+        "sIsoCode": "en",
+        "sLanguageName": "Englisch",
+        "shtIsDefault": 0,
+        "shtLanguageID": 2
+    }
+]
 ```
 
 **or**
