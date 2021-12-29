@@ -1,3 +1,4 @@
+* Basic Package
 * [Home](/)
 * [Authentication](auth/authentication.md)
 * [Authorization](authorization/authorization.md)
@@ -6,6 +7,7 @@
 * [Basics](basics/basics.md)
 * [Bending](bending/bending.md)
 * [Carts](carts/carts.md)
+* [Configuration](configuration/configuration.md)
 * [Contacts](contacts/contacts.md)
 * [Countries](countries/countries.md)
 * [Customers](customers/customers.md)
@@ -19,4 +21,6 @@
 * [Shipping-addresses](shipping-addresses/shipping-addresses.md)
 * [Tickets](ticket/ticket.md)
 * [Translation (i18n)](translation/translation.md)
-* [Users](users/users.md)
+  * [Users](users/users.md)
+* Steel Package
+  * [Configuration](steelpackage/configuration/configuration.md)
