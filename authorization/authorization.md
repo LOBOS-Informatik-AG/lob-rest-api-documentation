@@ -20,33 +20,25 @@ None
 
 ### Success Response
 
-**Condition** : If roles are found.
-
 **Code** : `200 OK`
 
-**Content example**
+**Content examples**
 
-```json
-[
-    {
-        "lngID": 101,
-        "sRoleName": "Admin"
-    },
-    {
-        "lngID": 102,
-        "sRoleName": "User"
-    }
-]
-```
+- Roles found
+    ```json
+    [
+        {
+            "lngID": 101,
+            "sRoleName": "Admin"
+        },
+        {
+            "lngID": 102,
+            "sRoleName": "User"
+        }
+    ]
+    ```
 
-**or**
-
-**Condition** : no roles are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Berechtigungsgruppen gefunden."
-}
-```
+- No roles found
+    ```json
+    []
+    ```

@@ -36,17 +36,6 @@ The scope ist the top level node of the key field.</br>
         "emailValid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
         "submitButton": "Senden",
         "title": "PASSWORT WIEDERHERSTELLEN"
-    },
-    ...
+    }
 }
-```
-
-**or**
-
-**Condition** : if no translations are found.
-
-**Content example**
-
-```json
-{}
 ```

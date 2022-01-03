@@ -16,8 +16,6 @@ This endpoint allows you to get all the projects
 
 ### Success Response
 
-**Condition** : If projects are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -39,16 +37,4 @@ This endpoint allows you to get all the projects
         "shtStatus": 0
     }
 ]
-```
-
-**or**
-
-**Condition** : no projects are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Projekte gefunden."
-}
 ```

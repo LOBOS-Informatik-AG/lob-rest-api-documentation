@@ -18,8 +18,6 @@ This endpoint allows you to get all documents
 
 ### Success Response
 
-**Condition** : If documents are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -224,18 +222,6 @@ This endpoint allows you to get all documents
 }
 ```
 
-**or**
-
-**Condition** : no documents are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Kontakte gefunden."
-}
-```
-
 ## Get printed sales-document
 
 This endpoint allows you to reprint the document
@@ -254,7 +240,7 @@ This endpoint allows you to reprint the document
 
 **Query parameters**
 
-``` json
+```json
 {
     "sDocumentType": "O",
     "lngDocumentID": 123456
@@ -268,11 +254,7 @@ This endpoint allows you to reprint the document
 
 **Code** : `200 OK`
 
-**Content example**
-
-```json
-// TODO
-```
+**Content** : File download
 
 **or**
 

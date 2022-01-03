@@ -18,8 +18,6 @@ This endpoint allows you to GET sales-orders for the authenticated user (Custome
 
 ### Success Response
 
-**Condition** : If sales-orders are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -157,17 +155,6 @@ This endpoint allows you to GET sales-orders for the authenticated user (Custome
     ]
 }
 ```
-**or**
-
-**Condition** : no sales-orders are found.
-
-**Content example**
-
-```json
-{
-    "text": "Auftrag nicht gefunden."
-}
-```
 
 ## Get sales-orders by id
 
@@ -182,8 +169,6 @@ This endpoint allows you to GET a sales-order by id
 **Permissions required** : No
 
 ### Success Response
-
-**Condition** : If sales-order are found.
 
 **Code** : `200 OK`
 
@@ -261,8 +246,6 @@ This endpoint allows you to GET all the sales-order items
 **Query parameters** : default filters
 
 ### Success Response
-
-**Condition** : If sales-order items are found.
 
 **Code** : `200 OK`
 
@@ -801,21 +784,6 @@ This endpoint allows you to GET all the sales-order items
     ]
 }
 ```
-**or**
-
-**Condition** : no sales-order items are found.
-
-**Content example**
-
-```json
-{
-    "perPage": 0,
-    "lastPage": "-2147483648",
-    "currentPage": "1",
-    "total": 0,
-    "data": []
-}
-```
 
 ## Get sales-offers
 
@@ -834,8 +802,6 @@ This endpoint allows you to GET sales-offers for the authenticated user (Custome
 **Query parameters** : default filters
 
 ### Success Response
-
-**Condition** : If sales-offers are found.
 
 **Code** : `200 OK`
 
@@ -933,17 +899,6 @@ This endpoint allows you to GET sales-offers for the authenticated user (Custome
     ]
 }
 ```
-**or**
-
-**Condition** : no sales-orders are found.
-
-**Content example**
-
-```json
-{
-    "text": "Auftrag nicht gefunden."
-}
-```
 
 ## Get sales-offers by id
 
@@ -958,8 +913,6 @@ This endpoint allows you to GET a sales-offer by id
 **Permissions required** : No
 
 ### Success Response
-
-**Condition** : If sales-offer are found.
 
 **Code** : `200 OK`
 
@@ -1037,8 +990,6 @@ This endpoint allows you to GET all the sales-offer items
 **Query parameters** : default filters
 
 ### Success Response
-
-**Condition** : If sales-offer items are found.
 
 **Code** : `200 OK`
 
@@ -1312,21 +1263,6 @@ This endpoint allows you to GET all the sales-offer items
     ]
 }
 ```
-**or**
-
-**Condition** : no sales-offer items are found.
-
-**Content example**
-
-```json
-{
-    "perPage": 0,
-    "lastPage": "-2147483648",
-    "currentPage": "1",
-    "total": 0,
-    "data": []
-}
-```
 
 ## Get sales-credit-notes
 
@@ -1345,8 +1281,6 @@ This endpoint allows you to GET sales-credit-notes for the authenticated user (C
 **Query parameters** : default filters
 
 ### Success Response
-
-**Condition** : If sales-credit-notes are found.
 
 **Code** : `200 OK`
 
@@ -1401,17 +1335,6 @@ This endpoint allows you to GET sales-credit-notes for the authenticated user (C
             "shtStatus": 5
         }
     ]
-}
-```
-**or**
-
-**Condition** : no sales-orders are found.
-
-**Content example**
-
-```json
-{
-    "text": "Auftrag nicht gefunden."
 }
 ```
 
@@ -1507,8 +1430,6 @@ This endpoint allows you to GET all the sales-credit-note items
 **Query parameters** : default filters
 
 ### Success Response
-
-**Condition** : If sales-credit-notes items are found.
 
 **Code** : `200 OK`
 
@@ -1785,20 +1706,5 @@ This endpoint allows you to GET all the sales-credit-note items
             "shtStorageID": 1
         }
     ]
-}
-```
-**or**
-
-**Condition** : no sales-credit-notes items are found.
-
-**Content example**
-
-```json
-{
-    "perPage": 0,
-    "lastPage": "-2147483648",
-    "currentPage": "1",
-    "total": 0,
-    "data": []
 }
 ```

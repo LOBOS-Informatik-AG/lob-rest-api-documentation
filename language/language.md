@@ -18,8 +18,6 @@ None
 
 ### Success Response
 
-**Condition** : If languages are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -45,16 +43,4 @@ None
         "shtLanguageID": 2
     }
 ]
-```
-
-**or**
-
-**Condition** : no languages are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Sprachen gefunden."
-}
 ```

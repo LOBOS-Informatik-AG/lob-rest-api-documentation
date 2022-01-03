@@ -16,8 +16,6 @@ This endpoint allows you to get all countries with the attribute `ecomm = true`
 
 ### Success Response
 
-**Condition** : If countries with the flag `ecomm = true` are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -31,19 +29,6 @@ This endpoint allows you to get all countries with the attribute `ecomm = true`
         "shtCountryID": 41,
         "shtLanguageID": 1
     },
-    ...
+  {}
 ]
 ```
-
-**or**
-
-**Condition** : no countries are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Länder gefunden."
-}
-```
-

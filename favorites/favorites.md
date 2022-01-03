@@ -16,8 +16,6 @@ This endpoint allows you to get all the favorites-list
 
 ### Success Response
 
-**Condition** : If favorites are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -28,20 +26,8 @@ This endpoint allows you to get all the favorites-list
         "gListID": "9c29a83f-6382-4264-a8b4-2515713cc7f9",
         "sListname": "My favorites"
     },
-    ...
+  {}
 ]
-```
-
-**or**
-
-**Condition** : no favorites are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Favoritenlisten gefunden."
-}
 ```
 
 ## Get favorite-list by id
@@ -98,7 +84,7 @@ This endpoint allows you to create a favorites-list
 
 **Body**
 
-``` json
+```json
 {
     "sListname": "Test 1463"
 }
@@ -133,7 +119,7 @@ This endpoint allows you to update a favorites-list
 
 **Body**
 
-``` json
+```json
 {
     "gListID": "cb3aac5b-b139-4b64-9baf-dc717adbe0a0",
     "sListname": "Test 37"
@@ -181,7 +167,7 @@ None
 
 **Content example**
 
-```json
+```
 None
 ```
 
@@ -200,8 +186,6 @@ This endpoint allows you to get all the favorites-list
 **Query parameters** : Default filters
 
 ### Success Response
-
-**Condition** : If favorites are found.
 
 **Code** : `200 OK`
 
@@ -233,20 +217,8 @@ This endpoint allows you to get all the favorites-list
         },
         "shtItemID": 1
     },
-    ...
+  {}
 ]
-```
-
-**or**
-
-**Condition** : no favorites are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Favoriten gefunden."
-}
 ```
 
 ## Create favorite-item
@@ -412,7 +384,7 @@ This endpoint allows you to delete a favorite
 
 **Body**
 
-``` json
+```
 None
 ```
 
@@ -424,6 +396,6 @@ None
 
 **Content example**
 
-```json
+```
 None
 ```

@@ -14,11 +14,7 @@ This endpoint allows you to get all the shipping-addresses
 
 **Pagination** : Yes
 
-**Query parameters**
-
-``` json
-// TODO
-```
+**Query parameters** : default filters
 
 ### Success Response
 
@@ -51,20 +47,8 @@ This endpoint allows you to get all the shipping-addresses
             "sZipBox": "",
             "sZipCode": "8600"
         },
-        ...
+      {}
     ]
-}
-```
-
-**or**
-
-**Condition** : if no shipping-addresses are found.
-
-**Content example**
-
-```json
-{
-    "text": "Versand-Adresse nicht gefunden"
 }
 ```
 
@@ -104,7 +88,7 @@ This endpoint allows you to get a shipping-address by id
     "sStreet": "Auenstrasse 4",
     "sZipBox": "",
     "sZipCode": "8600"
-},
+}
 ```
 
 **or**
@@ -134,7 +118,7 @@ This endpoint allows you to create a shipping-address
 
 **Body**
 
-``` json
+```json
 {
     "lngAddressID": null,
     "lngContactID": 100955,
@@ -194,7 +178,7 @@ This endpoint allows you to update a shipping-address
 
 **Body**
 
-``` json
+```json
 {
     "lngAddressID": 18,
     "lngContactID": 100955,
@@ -254,7 +238,7 @@ This endpoint allows you to delete a shipping-address
 
 **Body**
 
-``` json
+```
 None
 ```
 
@@ -266,6 +250,6 @@ None
 
 **Content example**
 
-```json
+```
 None
 ```

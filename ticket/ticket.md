@@ -16,8 +16,6 @@ This endpoint allows you to get the tickets by the specified filters
 
 ### Success Response
 
-**Condition** : If tickets are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -42,20 +40,8 @@ This endpoint allows you to get the tickets by the specified filters
             "sB22Responsible": "MGR",
             "sEntryUser": "MHA"
         },
-        ...
+      {}
     ]
-}
-```
-
-**or**
-
-**Condition** : no tickets are found.
-
-**Content example**
-
-```json
-{
-    "text": "Kein(e) Ticket(s) gefunden."
 }
 ```
 
@@ -121,7 +107,7 @@ This endpoint allows you to create a ticket
 
 **Body**
 
-``` json
+```json
 {
     "dtAlterationDate": null,
     "dtEntryDate": 1592838793,
@@ -174,7 +160,7 @@ This endpoint allows you to update a ticket
 
 **Body**
 
-``` json
+```json
 {
     "dtAlterationDate": 1604335734000,
     "dtEntryDate": 1600038000,
@@ -228,8 +214,6 @@ This endpoint allows you to get all the messages of the specified ticket
 
 ### Success Response
 
-**Condition** : If messages are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -257,20 +241,8 @@ This endpoint allows you to get all the messages of the specified ticket
             "sText": "Hello Customer",
             "sTextType": "A"
         },
-        ...
+        {}
     ]
-}
-```
-
-**or**
-
-**Condition** : if no messages are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Nachrichten gefunden."
 }
 ```
 
@@ -288,7 +260,7 @@ This endpoint allows you create a ticket-message
 
 **Body**
 
-``` json
+```json
 {
         "lngTicketId": 2020068631,
         "sClerkID": "TF",
@@ -332,8 +304,6 @@ This endpoint allows you to get all ticket categories
 
 ### Success Response
 
-**Condition** : If categories are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -345,20 +315,8 @@ This endpoint allows you to get all ticket categories
         "lngParentCategoryID": 2,
         "sName": "LOBOS"
     },
-    ...
+    {}
 ]
-```
-
-**or**
-
-**Condition** : if no categories are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Ticket-Kategorien gefunden."
-}
 ```
 
 ## Get ticket-priorities
@@ -377,8 +335,6 @@ This endpoint allows you to get all ticket priorities
 
 ### Success Response
 
-**Condition** : If priorities are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -389,20 +345,8 @@ This endpoint allows you to get all ticket priorities
         "lngPriorityID": 1,
         "sName": "Normal"
     },
-    ...
+    {}
 ]
-```
-
-**or**
-
-**Condition** : if no priorities are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Ticket-Prioritäten gefunden."
-}
 ```
 
 ## Get ticket-types
@@ -421,8 +365,6 @@ This endpoint allows you to get all ticket priorities
 
 ### Success Response
 
-**Condition** : If types are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -433,20 +375,8 @@ This endpoint allows you to get all ticket priorities
         "lngTypeID": 314,
         "sName": "Anlagebuchhaltung"
     },
-    ...
+    {}
 ]
-```
-
-**or**
-
-**Condition** : if no types are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Ticket-Typen gefunden."
-}
 ```
 
 ## Get ticket-stats

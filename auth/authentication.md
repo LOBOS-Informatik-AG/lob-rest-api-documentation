@@ -95,15 +95,13 @@ The username and password field is required to successfully login
 {
     "text": "Ungültiges Passwort"
 }
-
-// or
-
+```
+or
+```json
 {
     "text": "Benutzer ungültig"
 }
 ```
-
-<div class="page"/>
 
 ## Logout
 
@@ -136,8 +134,6 @@ This endpoint allows you to remove the active session on the server
     "text": "Ungültige Sitzung."
 }
 ```
-
-<div class="page"/>
 
 ## New-pass
 
@@ -202,8 +198,6 @@ The "sNewPassword" field is required to set a new password
     "text": "Ungültige Sitzung."
 }
 ```
-
-<div class="page"/>
 
 ## Refresh-token
 
@@ -270,8 +264,6 @@ The username and password field is required to successfully login
 }
 ```
 
-<div class="page"/>
-
 ## Request-pass
 
 This endpoint allows you to request the possibility to set a new password
@@ -313,8 +305,6 @@ The "sEmail" field is required to request the possibility to set a new password
     "text": "eMail existiert nicht"
 }
 ```
-
-<div class="page"/>
 
 ## Reset-pass
 

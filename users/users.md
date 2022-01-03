@@ -12,15 +12,11 @@ This endpoint allows you to select all E-Users from eNVenta (filtered by custome
 
 **Permissions required** : No
 
-**Query parameters**
+**Pagination** : Yes
 
-```
-// TODO
-```
+**Query parameters** : default filters
 
 ### Success Response
-
-**Condition** : If users are found.
 
 **Code** : `200 OK`
 
@@ -42,20 +38,8 @@ This endpoint allows you to select all E-Users from eNVenta (filtered by custome
         "sUserName": "info@lobos.ch",
         "shtLanguageID": 1
     },
-    ...
+    {}
 ]
-```
-
-**or**
-
-**Condition** : no users are found.
-
-**Content example**
-
-```json
-{
-    "text": "Kein(e) User(s) gefunden."
-}
 ```
 
 ## Get user by id
@@ -122,7 +106,7 @@ This endpoint allows you to create a user
 
 **Body**
 
-``` json
+```json
 {
     "dtLastLogin": 1602846058000,
     "dtRegistration": 1601465682000,
@@ -192,7 +176,7 @@ This endpoint allows you to update a user
 
 **Body**
 
-``` json
+```json
 {
     "dtLastLogin": 1602846058000,
     "dtRegistration": 1601465682000,

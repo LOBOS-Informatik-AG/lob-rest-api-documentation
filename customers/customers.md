@@ -18,8 +18,6 @@ This endpoint allows you to get all the customers
 
 ### Success Response
 
-**Condition** : If customers are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -73,20 +71,8 @@ This endpoint allows you to get all the customers
             "shtPriceGroup": 2,
             "shtShippingConditionID": null
         },
-        ...
+      {}
     ]
-}
-```
-
-**or**
-
-**Condition** : if no customer are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Kunden gefunden."
 }
 ```
 

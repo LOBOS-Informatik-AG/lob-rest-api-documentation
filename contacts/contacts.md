@@ -20,8 +20,6 @@ None
 
 ### Success Response
 
-**Condition** : If contacts are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -42,19 +40,6 @@ None
         "sPosition": "",
         "shtInactive": null
     },
-    ...
+  {}
 ]
 ```
-
-**or**
-
-**Condition** : no contacts are found.
-
-**Content example**
-
-```json
-{
-    "text": "Keine Kontakte gefunden."
-}
-```
-

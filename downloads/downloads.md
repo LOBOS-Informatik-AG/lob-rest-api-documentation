@@ -99,5 +99,7 @@ form-data
 **Content example**
 
 ```json
-// TODO
+{
+  "text": "Datei oder Pfad nicht vorhanden." 
+}
 ```

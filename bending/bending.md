@@ -18,8 +18,6 @@ This endpoint allows you to GET all buildingsites who have set the attribute `Sh
 
 ### Success Response
 
-**Condition** : If buildingsites are found (in this example with Parameter bFavorite = true).
-
 **Code** : `200 OK`
 
 **Content example**
@@ -48,17 +46,7 @@ This endpoint allows you to GET all buildingsites who have set the attribute `Sh
     ]
 }
 ```
-**or**
 
-**Condition** : no buildingsites are found.
-
-**Content example**
-
-```json
-{
-    "text": "Projekt(e) nicht gefunden."
-}
-```
 
 ## Get buildingsites-items
 
@@ -103,17 +91,6 @@ This endpoint allows you to GET all items of a buildingsites.<br/>General Condit
     ]
 }
 ```
-**or**
-
-**Condition** : no buildingsites are found.
-
-**Content example**
-
-```json
-{
-    "text": "Auftrag nicht gefunden"
-}
-```
 
 ## Get buildingsites-statistics
 
@@ -133,8 +110,6 @@ This endpoint allows you to GET a statistic over all buildingsites.
 
 ### Success Response
 
-**Condition** : If buildingsites are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -148,37 +123,6 @@ This endpoint allows you to GET a statistic over all buildingsites.
     "data": [
         {
             "decTotalWeight": 60.000000000,
-            "lngProjectID": 10010,
-            "sProjectName": "LOBOS Informatik AG"
-        },
-        {
-            "decTotalWeight": 0,
-            "lngProjectID": 2019727,
-            "sProjectName": "Praktikum"
-        },
-        {
-            "decTotalWeight": 0,
-            "lngProjectID": 2021849,
-            "sProjectName": "LOBOS Informatik AG"
-        }
-    ]
-}
-```
-**or**
-
-**Condition** : no buildingsites are found.
-
-**Content example**
-
-```json
-{
-    "perPage": 5,
-    "lastPage": "1",
-    "currentPage": "1",
-    "total": 3,
-    "data": [
-        {
-            "decTotalWeight": 0,
             "lngProjectID": 10010,
             "sProjectName": "LOBOS Informatik AG"
         },
@@ -214,8 +158,6 @@ This endpoint allows you to GET a statistic over a selected buildingsite.
 
 ### Success Response
 
-**Condition** : If items are found.
-
 **Code** : `200 OK`
 
 **Content example**
@@ -237,15 +179,6 @@ This endpoint allows you to GET a statistic over a selected buildingsite.
         "sProjectName": "LOBOS Informatik AG"
     }
 ]
-```
-**or**
-
-**Condition** : no items are found.
-
-**Content example**
-
-```json
-[]
 ```
 
 ## Update buildingsites
